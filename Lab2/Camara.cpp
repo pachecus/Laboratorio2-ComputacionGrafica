@@ -1,4 +1,4 @@
-﻿#include "Camara.h"
+#include "../Headers/Camara.h"
 
 Camara::Camara(VEC3D pos, VEC3D lookAt, VEC3D up, double fov, double aspectRatio) {
 	this->aspectRatio = aspectRatio;
@@ -11,7 +11,7 @@ Camara::Camara(VEC3D pos, VEC3D lookAt, VEC3D up, double fov, double aspectRatio
 
 Rayo Camara::getRayo(double u, double v) {
 	double scale = tan(fov * 0.5);
-	VEC3D a = right * (u - 0.5)  * aspectRatio;
+	VEC3D a = right * (u - 0.5) * aspectRatio;
 	VEC3D dirRayo = (direccion + right * (u - 0.5) * scale * aspectRatio + up * (v - 0.5) * scale).normalizar();
 	return Rayo(posicion, dirRayo);
 }

@@ -1,4 +1,4 @@
-#include "Triangulo.h"
+#include "../Headers/Triangulo.h"
 
 Triangulo::Triangulo(VEC3D p1, VEC3D p2, VEC3D p3,string nombre) {
     this->punto1 = p1;

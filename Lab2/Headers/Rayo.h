@@ -13,8 +13,8 @@ public:
 
     // Constructor
     Rayo() {
-        this->origen = VEC3D(0,0,0);
-        this->direccion = VEC3D(0,0,0);
+        this->origen = VEC3D(0, 0, 0);
+        this->direccion = VEC3D(0, 0, 0);
     }
     Rayo(VEC3D origen, VEC3D direccion) {
         this->origen = origen;

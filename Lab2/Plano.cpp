@@ -1,4 +1,4 @@
-#include "Plano.h"
+#include "../Headers/Plano.h"
 
 Plano::Plano(VEC3D p1, VEC3D p2, VEC3D p3, VEC3D p4, material m,string nombre) {
     this->punto1 = p1; // sup der

@@ -1,4 +1,4 @@
-﻿#pragma once
+#pragma once
 
 #ifndef LUZ_H
 #define LUZ_H
@@ -9,7 +9,7 @@
 
 class Luz {
 private:
-    // Datos de la c�mara
+    // Datos de la c?mara
     VEC3D posicion;
     double intensidad;
 

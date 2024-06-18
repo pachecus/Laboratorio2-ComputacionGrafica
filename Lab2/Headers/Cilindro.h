@@ -1,4 +1,4 @@
-﻿#pragma once
+#pragma once
 
 #ifndef CILINDRO_H
 #define CILINDRO_H

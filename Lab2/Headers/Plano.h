@@ -1,4 +1,4 @@
-﻿#pragma once
+#pragma once
 
 #ifndef PLANO_H
 #define PLANO_H
@@ -21,7 +21,7 @@ public:
     Plano(VEC3D, VEC3D, VEC3D, VEC3D, material, string);
     string getNombre();
 
-    // Implementaci�n del m�todo virtual para obtener el volumen de la esfera
+    // Implementaci?n del m?todo virtual para obtener el volumen de la esfera
     bool interseccion(Rayo rayo, double distanciaMinima, VEC3D& nuevoOrigen, VEC3D& normal);
 
     material getMaterial();

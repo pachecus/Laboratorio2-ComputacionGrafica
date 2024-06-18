@@ -1,4 +1,4 @@
-#include "Vector.h"
+#include "../Headers/Vector.h"
 
 VEC3D::VEC3D() {
     this->x = 0;

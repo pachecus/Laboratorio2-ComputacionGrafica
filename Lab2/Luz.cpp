@@ -1,4 +1,4 @@
-#include "Luz.h"
+#include "../Headers/Luz.h"
 
 Luz::Luz(VEC3D p, double i) {
 	this->posicion = p;

@@ -1,8 +1,8 @@
 #include <FreeImage.h>
-#include "Luz.h"
-#include "Camara.h"
-#include "Opciones.h"
-#include "utils.h"
+#include "../Headers/Luz.h"
+#include "../Headers/Camara.h"
+#include "../Headers/Opciones.h"
+#include "../Headers/utils.h"
 #include <time.h>
 
 int main() {
@@ -30,10 +30,10 @@ int main() {
     set<Luz*> luces;
 
     XMLElement* opcionesXML = escena->FirstChildElement("opciones");
-    cargarOpciones(opcionesXML, ancho, alto, profundidad, c1, c2, c3, iA,cantRayos);
+    cargarOpciones(opcionesXML, ancho, alto, profundidad, c1, c2, c3, iA, cantRayos);
 
     cout << "Opciones: " << endl;
-    cout << "ancho: "<<ancho << endl;
+    cout << "ancho: " << ancho << endl;
     cout << "alto: " << alto << endl;
     cout << "profundidad: " << profundidad << endl;
     cout << "cantRayos: " << cantRayos << endl;
@@ -43,8 +43,8 @@ int main() {
     cout << "iA: " << iA << endl;
 
     XMLElement* camara = escena->FirstChildElement("camara");
-    
-    cargarCamara(camara, posCam, lookat, up, fov);    
+
+    cargarCamara(camara, posCam, lookat, up, fov);
     double aspectRatio = ancho / alto;
     Camara cam = Camara(posCam, lookat, up, fov, aspectRatio);
 

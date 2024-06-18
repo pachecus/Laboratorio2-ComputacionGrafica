@@ -1,4 +1,4 @@
-#include "Esfera.h"
+#include "../Headers/Esfera.h"
 
 Esfera::Esfera(double r, VEC3D c, material m, string nombre) {
     this->centro = c;

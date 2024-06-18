@@ -1,4 +1,4 @@
-#include "Mesa.h"
+#include "../Headers/Mesa.h"
 
 Mesa::Mesa(material m, set<Triangulo*> t,string nombre) {
     this->mat = m;
