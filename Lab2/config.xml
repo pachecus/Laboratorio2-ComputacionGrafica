@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<escena>
+	<opciones>
+		<ancho>1920</ancho>
+		<alto>1080</alto>
+		<profundidad>10</profundidad>
+		<c1>0.01</c1>
+		<c2>0.03</c2>
+		<c3>0.09</c3>
+		<intensidadLuzAmbiente>0.8</intensidadLuzAmbiente>
+		<cantRayos>1</cantRayos>
+	</opciones>
+
+	<camara>
+		<posicion x="250" y="-500" z="350"/>
+		<lookat x="250" y="250" z="250"/>
+		<up x="0" y="0" z="1"/>
+		<fov>100</fov>
+	</camara>
+
+	<objetos>
+		
+		<!-- Esfera de Arriba -->
+		<esfera>
+			<centro x="80" y="150" z="400"/>
+			<radio>40</radio>
+			<material>
+				<coefRefleccionAmbiente>0.1</coefRefleccionAmbiente><!-- kA -->
+				<coefRefleccionDifusa>0.0</coefRefleccionDifusa><!-- kD -->
+				<coefRefleccionEspecular>0.0</coefRefleccionEspecular><!-- kS -->
+				<exponenteEspecular>1</exponenteEspecular><!-- eN -->
+				<coefTransmision>0.9</coefTransmision><!-- kT -->
+				<indiceRefraccion>1.5</indiceRefraccion><!-- iA -->
+				<color r="0.92" g="0.92" b="0.92"/>
+				<colorD r="0.92" g="0.92" b="0.92" />
+				<colorE r="1" g="1" b="1" />
+			</material>
+		</esfera>
+		
+		<!-- Esfera de la Izquierda -->
+		<esferaIzquierda>
+			<centro x="165" y="280" z="210"/>
+			<radio>60</radio>
+			<material>
+				<coefRefleccionAmbiente>0.01</coefRefleccionAmbiente><!-- kA -->
+				<coefRefleccionDifusa>0.0</coefRefleccionDifusa><!-- kD -->
+				<coefRefleccionEspecular>0.2</coefRefleccionEspecular><!-- kS -->
+				<exponenteEspecular>100</exponenteEspecular><!-- eN -->
+				<coefTransmision>0.9</coefTransmision><!-- kT -->
+				<indiceRefraccion>1.7</indiceRefraccion><!-- iA -->
+				<color r="0.37" g="0" b="0"/>
+				<colorD r="0.37" g="0" b="0" />
+				<colorE r="1" g="1" b="1" />
+			</material>
+		</esferaIzquierda>
+
+		<!-- Esfera de la Derecha -->
+		<esferaDerecha>
+			<centro x="400" y="300" z="190"/>
+			<radio>40</radio>
+			<material>
+				<coefRefleccionAmbiente>0.1</coefRefleccionAmbiente><!-- kA -->
+				<coefRefleccionDifusa>0.0</coefRefleccionDifusa><!-- kD -->
+				<coefRefleccionEspecular>1.0</coefRefleccionEspecular><!-- kS -->
+				<exponenteEspecular>40</exponenteEspecular><!-- eN -->
+				<coefTransmision>0.0</coefTransmision><!-- kT -->
+				<indiceRefraccion>0.0</indiceRefraccion><!-- iA -->
+				<color r="0" g="0" b="0"/>
+				<colorD r="0.3" g="0.3" b="0.3" />
+				<colorE r="0.8" g="0.8" b="0.8" />
+			</material>
+		</esferaDerecha>
+
+		<!-- Cilindro del Medio -->
+		<cilindro>
+			<centro x="210" y="270" z="150"/>
+			<radio>30</radio>
+			<altura>80</altura>
+			<material>
+				<coefRefleccionAmbiente>0.15</coefRefleccionAmbiente><!-- kA -->
+				<coefRefleccionDifusa>1.0</coefRefleccionDifusa><!-- kD -->
+				<coefRefleccionEspecular>0.0</coefRefleccionEspecular><!-- kS -->
+				<exponenteEspecular>1.0</exponenteEspecular><!-- eN -->
+				<coefTransmision>0.0</coefTransmision><!-- kT -->
+				<indiceRefraccion>0.0</indiceRefraccion><!-- iA -->
+				<color r="1" g="0" b="0"/>
+				<colorD r="1" g="0" b="0" />
+				<colorE r="1" g="1" b="1" />
+			</material>
+		</cilindro>
+
+		<!-- Cilindro de la Izquierda -->
+		<cilindro>
+			<centro x="40" y="400" z="0"/>
+			<radio>20</radio>
+			<altura>500</altura>
+			<material>
+				<coefRefleccionAmbiente>0.7</coefRefleccionAmbiente><!-- kA -->
+				<coefRefleccionDifusa>1.0</coefRefleccionDifusa><!-- kD -->
+				<coefRefleccionEspecular>0.1</coefRefleccionEspecular><!-- kS -->
+				<exponenteEspecular>5.0</exponenteEspecular><!-- eN -->
+				<coefTransmision>0.0</coefTransmision><!-- kT -->
+				<indiceRefraccion>1.0</indiceRefraccion><!-- iA -->
+				<color r="1" g="1" b="1"/>
+				<colorD r="1" g="1" b="1" />
+				<colorE r="1" g="1" b="1" />
+			</material>
+		</cilindro>
+
+		<!-- Cilindro de la Derecha -->
+		<cilindro>
+			<centro x="450" y="400" z="0"/>
+			<radio>20</radio>
+			<altura>500</altura>
+			<material>
+				<coefRefleccionAmbiente>0.7</coefRefleccionAmbiente><!-- kA -->
+				<coefRefleccionDifusa>1.0</coefRefleccionDifusa><!-- kD -->
+				<coefRefleccionEspecular>0.1</coefRefleccionEspecular><!-- kS -->
+				<exponenteEspecular>5.0</exponenteEspecular><!-- eN -->
+				<coefTransmision>0.0</coefTransmision><!-- kT -->
+				<indiceRefraccion>1.0</indiceRefraccion><!-- iA -->
+				<color r="1" g="1" b="1"/>
+				<colorD r="1" g="1" b="1" />
+				<colorE r="1" g="1" b="1" />
+			</material>
+		</cilindro>
+		
+		<!-- Pared de Atras -->
+		<paredAtras>
+			<punto1 x="500" y="500" z="500"/>
+			<punto2 x="0" y="500" z="500"/>
+			<punto3 x="0" y="500" z="0"/>
+			<punto4 x="500" y="500" z="0"/>
+			<material>
+				<coefRefleccionAmbiente>0.01</coefRefleccionAmbiente><!-- kA -->
+				<coefRefleccionDifusa>0.8</coefRefleccionDifusa><!-- kD -->
+				<coefRefleccionEspecular>0.0</coefRefleccionEspecular><!-- kS -->
+				<exponenteEspecular>1.0</exponenteEspecular><!-- eN -->
+				<coefTransmision>0.0</coefTransmision><!-- kT -->
+				<indiceRefraccion>1.0</indiceRefraccion><!-- iA -->
+				<color r="0.659" g="0.153" b="0.063"/>
+				<colorD r="0.659" g="0.153" b="0.063"/>
+				<colorE r="0" g="0" b="0"/>
+			</material>
+		</paredAtras>
+
+		<!-- Espejo -->
+		<espejo>
+			<punto1 x="430" y="499" z="300"/>
+			<punto2 x="60" y="499" z="300"/>
+			<punto3 x="60" y="499" z="150"/>
+			<punto4 x="430" y="499" z="150"/>
+			<material>
+				<coefRefleccionAmbiente>0.01</coefRefleccionAmbiente><!-- kA -->
+				<coefRefleccionDifusa>0.8</coefRefleccionDifusa><!-- kD -->
+				<coefRefleccionEspecular>1.0</coefRefleccionEspecular><!-- kS -->
+				<exponenteEspecular>400</exponenteEspecular><!-- eN -->
+				<coefTransmision>0.0</coefTransmision><!-- kT -->
+				<indiceRefraccion>1.0</indiceRefraccion><!-- iA -->
+				<color r="0" g="0." b="0"/>
+				<colorD r="0.3" g="0.3" b="0.3"/>
+				<colorE r="0.8" g="0.8" b="0.8"/>
+			</material>
+		</espejo>
+
+		<!-- Pared de la Derecha -->
+		<paredDerecha>
+			<punto1 x="500" y="500" z="500"/>
+			<punto2 x="500" y="0" z="500"/>
+			<punto3 x="500" y="0" z="0"/>
+			<punto4 x="500" y="500" z="0"/>
+			<material>
+				<coefRefleccionAmbiente>0.01</coefRefleccionAmbiente><!-- kA -->
+				<coefRefleccionDifusa>0.8</coefRefleccionDifusa><!-- kD -->
+				<coefRefleccionEspecular>0.0</coefRefleccionEspecular><!-- kS -->
+				<exponenteEspecular>1.0</exponenteEspecular><!-- eN -->
+				<coefTransmision>0.0</coefTransmision><!-- kT -->
+				<indiceRefraccion>1.0</indiceRefraccion><!-- iA -->
+				<color r="0" g="0.5" b="0.75"/>
+				<colorD r="0" g="0.5" b="0.75" />
+				<colorE r="0" g="0" b="0" />
+			</material>
+		</paredDerecha>
+
+		<!-- Pared de la Izquierda -->
+		<paredIzquierda>
+			<punto1 x="0" y="500" z="500"/>
+			<punto2 x="0" y="0" z="500"/>
+			<punto3 x="0" y="0" z="0"/>
+			<punto4 x="0" y="500" z="0"/>
+			<material>
+				<coefRefleccionAmbiente>0.01</coefRefleccionAmbiente><!-- kA -->
+				<coefRefleccionDifusa>0.8</coefRefleccionDifusa><!-- kD -->
+				<coefRefleccionEspecular>0.0</coefRefleccionEspecular><!-- kS -->
+				<exponenteEspecular>1.0</exponenteEspecular><!-- eN -->
+				<coefTransmision>0.0</coefTransmision><!-- kT -->
+				<indiceRefraccion>1.0</indiceRefraccion><!-- iA -->
+				<color r="1" g="1" b="0"/>
+				<colorD r="1" g="1" b="0" />
+				<colorE r="0" g="0" b="0" />
+			</material>
+		</paredIzquierda>
+		
+		<!-- Techo -->
+		<Techo>
+			<punto1 x="500" y="500" z="500"/>
+			<punto2 x="0" y="500" z="500"/>
+			<punto3 x="0" y="0" z="500"/>
+			<punto4 x="500" y="0" z="500"/>
+			<material>
+				<coefRefleccionAmbiente>0.1</coefRefleccionAmbiente><!-- kA -->
+				<coefRefleccionDifusa>0.8</coefRefleccionDifusa><!-- kD -->
+				<coefRefleccionEspecular>0.0</coefRefleccionEspecular><!-- kS -->
+				<exponenteEspecular>1.0</exponenteEspecular><!-- eN -->
+				<coefTransmision>0.0</coefTransmision><!-- kT -->
+				<indiceRefraccion>1.0</indiceRefraccion><!-- iA -->
+				<color r="0.9" g="0.9" b="0.3"/>
+				<colorD r="0.9" g="0.9" b="0.3" />
+				<colorE r="0" g="0" b="0" />
+			</material>
+		</Techo>
+
+		<!-- Piso -->
+		<Piso>
+			<punto1 x="500" y="500" z="0"/>
+			<punto2 x="0" y="500" z="0"/>
+			<punto3 x="0" y="0" z="0"/>
+			<punto4 x="500" y="0" z="0"/>
+			<material>
+				<coefRefleccionAmbiente>0.01</coefRefleccionAmbiente><!-- kA -->
+				<coefRefleccionDifusa>0.8</coefRefleccionDifusa><!-- kD -->
+				<coefRefleccionEspecular>0.0</coefRefleccionEspecular><!-- kS -->
+				<exponenteEspecular>1.0</exponenteEspecular><!-- eN -->
+				<coefTransmision>0.0</coefTransmision><!-- kT -->
+				<indiceRefraccion>1.0</indiceRefraccion><!-- iA -->
+				<color r="0.5" g="0.5" b="0.5"/>
+				<colorD r="0.8" g="0.8" b="0.8" />
+				<colorE r="0" g="0" b="0" />
+			</material>
+		</Piso>
+
+		<!-- Pared de Adelante -->
+		<paredAdelante>
+			<punto1 x="500" y="-2750" z="500"/>
+			<punto2 x="0" y="-2750" z="500"/>
+			<punto3 x="0" y="-2750" z="0"/>
+			<punto4 x="500" y="-2750" z="0"/>
+			<material>
+				<coefRefleccionAmbiente>0.01</coefRefleccionAmbiente><!-- kA -->
+				<coefRefleccionDifusa>0.8</coefRefleccionDifusa><!-- kD -->
+				<coefRefleccionEspecular>0.0</coefRefleccionEspecular><!-- kS -->
+				<exponenteEspecular>1.0</exponenteEspecular><!-- eN -->
+				<coefTransmision>0.0</coefTransmision><!-- kT -->
+				<indiceRefraccion>1.0</indiceRefraccion><!-- iA -->
+				<color r="1" g="0.39" b="0.21"/>
+				<colorD r="1" g="0.39" b="0.21" />
+				<colorE r="0" g="0" b="0" />
+			</material>
+		</paredAdelante>
+		
+		<!-- Mesa -->
+		<mesa>
+			<caraIzquierda>
+				<triangulo1>
+					<punto1 x="50" y ="180" z ="0" />
+					<punto2 x="50" y ="380" z ="0" />
+					<punto3 x="50" y ="180" z ="150" />
+				</triangulo1>
+
+				<triangulo2>
+					<punto3 x="50" y ="180" z ="150" />
+					<punto1 x="50" y ="380" z ="0" />
+					<punto2 x="50" y ="380" z ="150" />
+				</triangulo2>
+			</caraIzquierda>
+
+			<caraDerecha>
+				<triangulo1>
+					<punto1 x="450" y ="380" z ="0" />
+					<punto2 x="450" y ="180" z ="0" />
+					<punto3 x="450" y ="380" z ="150" />
+				</triangulo1>
+				<triangulo2>
+					<punto1 x="450" y ="180" z ="150" />
+					<punto2 x="450" y ="180" z ="0" />
+					<punto3 x="450" y ="380" z ="150" />
+				</triangulo2>
+			</caraDerecha>
+
+			<caraArriba>
+				<triangulo1>
+					<punto1 x="50" y ="380" z ="150" />
+					<punto3 x="50" y ="180" z ="150" />
+					<punto2 x="450" y ="180" z ="150" />
+				</triangulo1>
+				<triangulo2>
+					<punto1 x="450" y ="180" z ="150" />
+					<punto2 x="50" y ="380" z ="150" />
+					<punto3 x="450" y ="380" z ="150" />
+				</triangulo2>
+			</caraArriba>
+
+			<caraAdelante>
+				<triangulo1>
+					<punto1 x="50" y ="180" z ="0" />
+					<punto2 x="50" y ="180" z ="150" />
+					<punto3 x="450" y ="180" z ="0" />
+				</triangulo1>
+				<triangulo2>
+					<punto2 x="450" y ="180" z ="0" />
+					<punto3 x="50" y ="180" z ="150" />
+					<punto1 x="450" y ="180" z ="150" />
+				</triangulo2>
+			</caraAdelante>
+
+			<caraAtras>
+				<triangulo1>
+					<punto1 x="50" y ="380" z ="0" />
+					<punto2 x="50" y ="380" z ="150" />
+					<punto3 x="450" y ="380" z ="0" />
+				</triangulo1>
+				<triangulo2>
+					<punto2 x="450" y ="380" z ="0" />
+					<punto3 x="50" y ="380" z ="150" />
+					<punto1 x="450" y ="380" z ="150" />
+				</triangulo2>
+			</caraAtras>
+
+
+			
+			<material>
+				<coefRefleccionAmbiente>0.1</coefRefleccionAmbiente><!-- kA -->
+				<coefRefleccionDifusa>0.8</coefRefleccionDifusa><!-- kD -->
+				<coefRefleccionEspecular>0.0</coefRefleccionEspecular><!-- kS -->
+				<exponenteEspecular>1.0</exponenteEspecular><!-- eN -->
+				<coefTransmision>0.0</coefTransmision><!-- kT -->
+				<indiceRefraccion>1.0</indiceRefraccion><!-- iA -->
+				<color r="0.89" g="0.8" b="0.7"/>
+				<colorD r="0.89" g="0.8" b="0.7"/>
+				<colorE r="0" g="0" b="0" />
+			</material>
+		</mesa>
+	</objetos>
+
+	<!-- Luces -->
+	<luces>
+		<luz1>
+			<posicion x="250" y="150" z="498"/>
+			<intensidad>2.0</intensidad>
+		</luz1>
+		<luz2>
+			<posicion x="250" y="400" z="498"/>
+			<intensidad>2.0</intensidad>
+		</luz2>
+	</luces>
+</escena>
