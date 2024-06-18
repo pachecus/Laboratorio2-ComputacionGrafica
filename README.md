@@ -6,6 +6,6 @@ Para ejecutarlo se puede hacer de dos maneras, usando Visual Studio 2022 y ejecu
 Luego de ejecutarlo dentro de la carpeta Images se creara una carpeta con la fecha y hora actual en la cual estarán las imagenes creadas.
 
 Este proyecto fue hecho en grupo con:
-   Nicolas Lettiere -> https://github.com/nicolaslettiere
-   Matias Marin -> https://github.com/matimarin456
+   <p>Nicolas Lettiere -> https://github.com/nicolaslettiere</p>
+   <p></p>Matias Marin -> https://github.com/matimarin456</p>
 
